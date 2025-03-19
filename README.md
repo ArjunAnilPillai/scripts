@@ -2,9 +2,9 @@
 Personal scripts for multiple tools (eg. tmux)
 
 ## Steps to use
-- Copy the scripts folder *.scripts* to ~/.
-- Copy contents of *aliases.sh* to bashrc or bash_profile (or bash_aliases).
-- Copy conf files from the .conf folder to ~/.
+- Clone this repo and place it into ~/
+- Include scripts/.arjua-bashrc into ~/.bashrc
+- Add a .tmux-config pointing to ~/scripts/.tmux-conf
 
 ## Old
 Contains:

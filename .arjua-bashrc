@@ -1,8 +1,8 @@
 # Include this file in the .bashrc file
 
 # Include aliases etc
-. ~/.scripts/aliases.sh
-. ~/.scripts/git-helpers.sh
+. ~/scripts/.scripts/aliases.sh
+. ~/scripts/.scripts/git-helpers.sh
 
 # Make default git editor nvim
 export GIT_EDITOR=nvim
