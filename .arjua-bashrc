@@ -1,0 +1,19 @@
+# Include this file in the .bashrc file
+
+# Include aliases etc
+. ~/.scripts/aliases.sh
+. ~/.scripts/git-helpers.sh
+
+# Make default git editor nvim
+export GIT_EDITOR=nvim
+
+# Display current branch in terminal prompt                                                                                                                                                     
+parse_git_branch() {                                                                                                                                                                            
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'                                                                                                                          
+}                                                                                                                                                                                               
+export PS1="[\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\]] $ "
+
+# Install fortune and cowsay for the below command to work.
+# what does the ~~fox~~ cow say?
+echo "---"
+fortune -s | cowsay -r
